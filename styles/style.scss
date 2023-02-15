@@ -7,7 +7,6 @@
 body {
     background-color: #000000;
     color: white;
-    font-family: "SF Pro Display";
 }
 h1 {
     text-align: center;
@@ -56,6 +55,7 @@ h1 {
         max-width: 31.5625rem;
         margin: 0 2.1875rem;
         overflow-x: auto;
+        white-space: nowrap;
     }
     @media screen and (max-width: 375px) {
         margin: 0 1rem;
@@ -68,105 +68,42 @@ h1 {
             display: inline-block;
         }
         .table-cell {
+            &:first-child {
+                width: 14%;
+            }
             &:nth-child(2) {
-                width: 10.3125rem;
-                @media screen and (max-width: 1280px) {
-                    width: 9.25rem;
-                }
-                @media screen and (max-width: 1024px) {
-                    width: 8.25rem;
-                }
-                @media screen and (max-width: 768px) {
-                    width: 6.1875rem;
-                } 
-                @media screen and (max-width: 575px) {
-                    width: 8.25rem;
-                }
-                @media screen and (max-width: 480px) {
-                    width: 7.1875rem;
-                }
-                @media screen and (max-width: 375px) {
-                    width: 6.1875rem;
-                }
+                width: 22%;
             }
             &:nth-child(3) {
-                width: 17.375rem;
-                @media screen and (max-width: 1280px) {
-                    width: 250px;
-                }
-                @media screen and (max-width: 1024px) {
-                    width: 13.75rem;
-                }
-                @media screen and (max-width: 768px) {
-                    width: 10.625rem;
-                } 
-                @media screen and (max-width: 575px) {
-                    width: 13.75rem;
-                }
-                @media screen and (max-width: 480px) {
-                    width: 11.875rem;
-                }
-                @media screen and (max-width: 375px) {
-                    width: 10.625rem;
-                }
+                width: 22%;
             }
             &:nth-child(4) {
-                width: 10.5rem;
-                @media screen and (max-width: 1280px) {
-                    width: 9.4375rem;
-                }
-                @media screen and (max-width: 1024px) {
-                    width: 8.375rem;
-                }
-                @media screen and (max-width: 768px) {
-                    width: 6.3125rem;
-                } 
-                @media screen and (max-width: 575px) {
-                    width: 8.375rem;
-                }
-                @media screen and (max-width: 480px) {
-                    width: 7.5rem;
-                }
-                @media screen and (max-width: 375px) {
-                    width: 6.3125rem;
-                }
+                width: 28%;
             }
             &:last-child {
-                width: 7.625rem;
-                @media screen and (max-width: 1280px) {
-                    width: 6.875rem;
-                }
-                @media screen and (max-width: 1024px) {
-                    width: 6.125rem;
-                }
-                @media screen and (max-width: 768px) {
-                    width: 4.625rem;
-                } 
-                @media screen and (max-width: 575px) {
-                    width: 6.125rem;
-                }
-                @media screen and (max-width: 480px) {
-                    width: 5.125rem;
-                }
-                @media screen and (max-width: 375px) {
-                    width: 4.625rem;
-                }
+                width: 14%;
             }
             &:not(:last-child) {
-                margin-right: 3.1875rem;
+                padding-right: 4.375rem;
+                @media screen and (max-width: 1440px) {
+                    padding-right: 3.1875rem;
+                }
                 @media screen and (max-width: 1280px) {
-                    margin-right: 3rem;
+                    padding-right: 3rem;
                 }
                 @media screen and (max-width: 991px) {
-                    margin-right: 2rem;
+                    padding-right: 2.625rem;
                 }
                 @media screen and (max-width: 768px) {
-                    margin-right: 1.375rem;
+                    padding-right: 1.75rem;
                 }
                 @media screen and (max-width: 575px) {
-                    margin-right: 2rem;
+                    padding-right: 2rem;
                 }
-            }  
+                @media screen and (max-width: 375px) {
+                    padding-right: 1.375rem;
+                }
+            }
         }
         .table-head {
             background-color: $bg-primary;
@@ -175,22 +112,31 @@ h1 {
                 background-color: $bg-secondary;
                 padding: 1.0625rem 3.625rem 1rem 3rem;
                 margin-bottom: 1.875rem;
+                width: 57.8125rem;
+                @media screen and (max-width: 1440px) {
+                    width: 53.125rem;
+                }
                 @media screen and (max-width: 1280px) {
+                    width: 46.0625rem;
                     padding: .8125rem 2.0625rem;
                     margin-bottom: 1.3125rem;
                 }
                 @media screen and (max-width: 1024px) {
+                    width: 43.625rem;
                     padding: .9375rem 2.3125rem;
                     margin-bottom: 1rem;
                 }
                 @media screen and (max-width: 991px) {
+                    width: 41.625rem;
                     padding: .9375rem 2.0625rem;
                 }
                 @media screen and (max-width: 768px) {
+                    width: 31.4375rem;
                     padding: .75rem 1.5625rem;
                     margin-bottom: .75rem;
                 }
                 @media screen and (max-width: 575px) {
+                    width: 37.75rem;
                     padding: .8125rem 1.875rem;
                 }
                 @media screen and (max-width: 480px) {
@@ -218,28 +164,6 @@ h1 {
                     @media screen and (max-width:375px) {
                         font-size: .875rem;
                     }
-                    &:first-child {
-                        width: 3.5rem;
-                        @media screen and (max-width: 1280px) {
-                            width: 2.875rem;
-                        }
-                        @media screen and (max-width:1024px) {
-                            width: 2.625rem;
-                        }
-                        @media screen and (max-width: 768px) {
-                            width: 2.3125rem;
-                        }
-                        @media screen and (max-width: 575px) {
-                            width: 2.875rem;
-                        } 
-                        @media screen and (max-width:480px) {
-                            width: 2.625rem;
-                        } 
-                        @media screen and (max-width: 375px) {
-                            width: 2.3125rem;
-                        }
-                    }
-
                 }
             }
         }
@@ -257,6 +181,7 @@ h1 {
                 display: flex;
                 align-items: center;
                 padding: .4375rem 3.625rem .375rem 3rem;
+                width: 100%;
                 &:first-child {
                     background-image: linear-gradient(to right,#20d4fe66,#b722ff66);
                 }
@@ -353,7 +278,6 @@ h1 {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 3.5rem;
                         .image {
                             max-height: 2rem;
                             &:first-child{
@@ -367,7 +291,6 @@ h1 {
                             }
                         }
                         @media screen and (max-width: 1280px) {
-                            width: 2.875rem;
                             .image {
                                 margin-right: .125rem;
                                 max-width: 1.5rem;
@@ -379,7 +302,6 @@ h1 {
                             }
                         }
                         @media screen and (max-width: 1024px) {
-                            width: 2.625rem;
                             .image {
                                 max-width: 1.625rem;
                                 max-height: 1.625rem;
@@ -390,7 +312,6 @@ h1 {
                             }
                         }
                         @media screen and (max-width: 768px) {
-                            width: 2.3125rem;
                             .image {
                                 max-width: 1.25rem;
                                 max-height: 1.25rem;
@@ -401,7 +322,6 @@ h1 {
                             }
                         } 
                         @media screen and (max-width: 575px) {
-                            width: 2.875rem;
                             .image {
                                 max-width: 1.75rem;
                                 max-height: 1.75rem;
@@ -418,7 +338,6 @@ h1 {
                             }
                         }
                         @media screen and (max-width: 480px) {
-                            width: 2.625rem;
                             .image {
                                 margin-right: .125rem;
                                 max-width: 1.5rem;
@@ -430,7 +349,6 @@ h1 {
                             }
                         }
                         @media screen and (max-width: 375px) {
-                            width: 2.3125rem;
                             .image {
                                 max-width: 1.25rem;
                                 max-height: 1.25rem;
