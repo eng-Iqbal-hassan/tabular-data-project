@@ -18,6 +18,18 @@ body {
   color: white;
 }
 
+.w-14 {
+  width: 14%;
+}
+
+.w-22 {
+  width: 22%;
+}
+
+.w-28 {
+  width: 28%;
+}
+
 h1 {
   text-align: center;
   margin: 3.75rem 0 2.5rem;
@@ -100,21 +112,6 @@ h1 span {
   .table-wrapper .table {
     display: inline-block;
   }
-}
-.table-wrapper .table .table-cell:first-child {
-  width: 14%;
-}
-.table-wrapper .table .table-cell:nth-child(2) {
-  width: 22%;
-}
-.table-wrapper .table .table-cell:nth-child(3) {
-  width: 22%;
-}
-.table-wrapper .table .table-cell:nth-child(4) {
-  width: 28%;
-}
-.table-wrapper .table .table-cell:last-child {
-  width: 14%;
 }
 .table-wrapper .table .table-cell:not(:last-child) {
   padding-right: 4.375rem;

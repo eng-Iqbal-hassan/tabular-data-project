@@ -8,6 +8,15 @@ body {
     background-color: #000000;
     color: white;
 }
+.w-14 {
+    width: 14%;
+}
+.w-22 {
+    width: 22%;
+}
+.w-28 {
+    width: 28%;
+}
 h1 {
     text-align: center;
     margin: 3.75rem 0 2.5rem;
@@ -68,21 +77,6 @@ h1 {
             display: inline-block;
         }
         .table-cell {
-            &:first-child {
-                width: 14%;
-            }
-            &:nth-child(2) {
-                width: 22%;
-            }
-            &:nth-child(3) {
-                width: 22%;
-            }
-            &:nth-child(4) {
-                width: 28%;
-            }
-            &:last-child {
-                width: 14%;
-            }
             &:not(:last-child) {
                 padding-right: 4.375rem;
                 @media screen and (max-width: 1440px) {
@@ -456,7 +450,7 @@ h1 {
                 margin-right: .75rem;
             }
             @media screen and (max-width: 375px) {
-                margin-right: 14px;
+                margin-right: 0.875rem;
             }
         }
     } 
